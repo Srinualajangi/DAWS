@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter a string to check" $string
+read -p "Enter a string to check: " $string
 reversed_input=$(echo "$string" | rev)
 
 if [ "$string" = "$reversed_input" ]; then
