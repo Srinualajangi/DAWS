@@ -3,7 +3,7 @@
 read -p "Enter a string to check: " $string
 reversed_input=$(echo "$string" | rev)
 
-if [ "$string" = "$reversed_input" ]; then
+if [ "$string" == "$reversed_input" ]; then
     echo "Palindrome"
 else
     echo "Given string is not a Palindrome"
