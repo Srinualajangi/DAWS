@@ -1,5 +1,5 @@
 #!/bin/bash/
-
+set -e -x
 if [ $# -ne 1 ]; then 
     echo "Please specify the filename: $0 "
     exit 1
