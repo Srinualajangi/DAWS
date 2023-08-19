@@ -1,8 +1,10 @@
 #!/bin/bash
 
 read -p "Enter a string to check" $string
-if [ [ $string|rev == $string ] ]; then
+reversed_input=$(echo "$string" | rev)
+
+if [ "$string" = "$reversed_input" ]; then
     echo "Palindrome"
-    else
+else
     echo "Given string is not a Palindrome"
 fi
