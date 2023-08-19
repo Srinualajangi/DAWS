@@ -11,7 +11,7 @@ if [ ! -f "$filename" ]; then
     echo "File '$filename' not found"
     exit 1
 fi
-read -p "Enter Word or phrase to be replaced: " R
-read -p "Enter new word for replacement: " N
+read -p "Enter the old word to be replaced : " old
+read -p "Enter the new word to be replaced : " new
 
-sed -i 's/$R/$N/g' $filename
+sed -i "s|$old|$new|g" $filename
