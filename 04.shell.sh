@@ -11,7 +11,7 @@ N="\e[0m"
 Y="\e[33m"
 
 MEM_USAGE=$(free -m | grep  Mem | awk '{print $3}')
-MEM_THRESHOLD=135
+MEM_THRESHOLD=100
 message=""
 
     if [ "$MEM_USAGE" -gt "$MEM_THRESHOLD" ]; then
