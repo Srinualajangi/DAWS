@@ -17,3 +17,4 @@ message="SYSTEM IS RUNNING WITH HIGH MEMORY UTILIZATION"
     if [ "$MEM_USAGE" -gt "$MEM_THRESHOLD" ]; then
     echo -e "$R $message: $MEM_USAGE $N MB"
     fi
+    sh mail.sh srinualajangi99@gmail.com "High Memory Usage" "$message" "DEVOPS TEAM" "High Memory usage"
