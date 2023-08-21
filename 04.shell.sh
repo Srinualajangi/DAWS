@@ -15,7 +15,5 @@ MEM_THRESHOLD=135
 message=""
 
     if [ "$MEM_USAGE" -gt "$MEM_THRESHOLD" ]; then
-    message+="SYSTEM IS RUNNING WITH HIGH MEMORY UTILIZATION: $MEM_USAGE MB"
+    echo "SYSTEM IS RUNNING WITH HIGH MEMORY UTILIZATION: $MEM_USAGE MB"
     fi
-
-echo -e "message: $message"
