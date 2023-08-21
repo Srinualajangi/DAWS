@@ -12,7 +12,7 @@ Y="\e[33m"
 
 MEM_USAGE=$(free -m | grep  Mem | awk '{print $3}')
 MEM_THRESHOLD=100
-message="SYSTEM IS RUNNING WITH HIGH MEMORY UTILIZATION"
+message="SYSTEM IS RUNNING WITH HIGH MEMORY UTILIZATION with $MEM_USAGE"
 
     if [ "$MEM_USAGE" -gt "$MEM_THRESHOLD" ]; then
     echo -e "$R $message: $MEM_USAGE $N MB"
